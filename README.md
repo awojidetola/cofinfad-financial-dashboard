@@ -30,7 +30,7 @@ The dashboard was designed to answer the following questions:
 6. Which acquisition channels and customer groups attract the greatest customer and transaction value?
 7. Which areas of the business require further investigation or present potential opportunities?
 
-For this project, not all the source variables were included int he final analytical model. The variables included are those that can answer the core business questions and are relevant to the stakeholders identified above.
+For this project, not all the source variables were included in the final analytical model. The variables included are those that can answer the core business questions and are relevant to the stakeholders identified above.
 
 ## **Data Modelling**
 
@@ -74,9 +74,9 @@ Focuses on transaction activity, transaction value, customer financial behaviour
 
 COFINFAD’s transaction activity is concentrated around a small number of important customer and acquisition segments. Organic acquisition is the largest source of both customers and transaction value, while savings accounts and credit cards lead product adoption. Transfers dominate overall transaction activity, and power customers represent a very valuable segment, contributing around 31% of transaction value despite comprising only about 10% of the customer base.
 
-**1. Organic acquisition is the strongest source of customers and transaction value.** It accounts for approximately 41% of the customer base and generates $5.3Tr (42.2%) of the total transaction value, the highest transaction value of any acquisition channel. This is followed by referrals which generate $3.8Tr (30.3%)
+1. Organic acquisition is the strongest source of customers and transaction value. It accounts for approximately 41% of the customer base and generates $5.3T (42.2%) of the total transaction value, the highest transaction value of any acquisition channel. This is followed by referrals which generate $3.8T (30.3%)
 
-**2. Product Adoption is strongest for savings accounts, with adoption generally higher among higher income customers.** Savings accounts have an overall adoption of 79%, followed by 63% for credit cards.
+2. Product Adoption is strongest for savings accounts, with adoption generally higher among higher income customers. Savings accounts have an overall adoption of 79%, followed by 63% for credit cards.
 
 | **Income Level** | **Savings Account** | **Credit Card** |
 | ---------------- | ------------------: | --------------: |
@@ -85,25 +85,25 @@ COFINFAD’s transaction activity is concentrated around a small number of impor
 | Medium           |                 81% |             61% |
 | Very High        |                100% |             98% |
 
-**3. Transfers dominate transaction activity and value.** Among the transaction types, they account for approximately 1.43M transactions (46.7%) and $6.1T in transaction value (48.6%), making them the largest transaction type by both volume and value. The average value per transaction is approximately $4.36M.
+3. Transfers dominate transaction activity and value. Among the transaction types, they account for approximately 1.43M transactions (46.7%) and $6.1T in transaction value (48.6%), making them the largest transaction type by both volume and value. The average value per transaction is approximately $4.36M.
 
 | **Transaction Type** | **Transaction Value** | **Transaction Volume** | **Avg. Value per Transaction** |
 | -------------------- | --------------------: | ---------------------: | -----------------------------: |
-| Transfer             |                 $6.1T |                  1.43M |                        ~$4.36M |
-| Payment              |                 $4.1T |                  1.00M |                        ~$4.10M |
-| Withdrawal           |                 $1.3T |                  0.46M |                        ~$3.00M |
-| Deposit              |                 $0.9T |                  0.30M |                        ~$3.00M |
+| Transfer             |                 $6.1T |                  1.43M |                        $4.36M |
+| Payment              |                 $4.1T |                  1.00M |                        $4.10M |
+| Withdrawal           |                 $1.3T |                  0.46M |                        $3.00M |
+| Deposit              |                 $0.9T |                  0.30M |                        $3.00M |
 
-**4. Power customers (segment) are very valuable to the business.** While they represent about 10% of customers, they account for approximately 31% of total transaction value. They have an average yearly transaction value per customer of $1.20B compared to $298.5M of regular customers. They also have the highest average transaction activity per customer, contributing disproportionately to overall financial performance.
+4. Power customers (segment) are very valuable to the business. While they represent about 10% of customers, they account for approximately 31% of total transaction value. They have an average yearly transaction value per customer of $1.20B compared to $298.5M of regular customers. They also have the highest average transaction activity per customer, contributing disproportionately to overall financial performance.
 
 Although the proportion of power customers is highest in the Very High income band (11.82%), power customers are present across all income groups (between 9% and 10%), indicating that high income alone does not define the segment.
 
 | **Customer Segment** | **Avg. Transaction Value per Customer** | **Avg. Transaction Volume per Customer** |
 | -------------------- | --------------------------------------: | ---------------------------------------: |
-| Inactive             |                                ~$23.73M |                                    59.33 |
-| Occasional           |                               ~$103.59M |                                    63.51 |
-| Power                |                                 ~$1.20B |                                    86.84 |
-| Regular              |                               ~$298.52M |                                    63.02 |
+| Inactive             |                                $23.73M |                                    59.33 |
+| Occasional           |                               $103.59M |                                    63.51 |
+| Power                |                                 $1.20B |                                    86.84 |
+| Regular              |                               $298.52M |                                    63.02 |
 
 ## Recommendations
 
@@ -113,7 +113,7 @@ Although the proportion of power customers is highest in the Very High income ba
 
 3. Strengthen referral acquisition by testing targeted referral incentives and referral programmes. Referral is the second-largest acquisition channel by transaction value ($3.8Tr), suggesting an opportunity to investigate whether existing customers can be encouraged to acquire additional customers through structured referral initiatives.
 
-4. Protect and strengthen transaction journeys customers already use. Results show that transfers dominate customer activity. Review support tickets, customer feedback for friction associated with other transaction methods. A/B testing of introducing new methods and experiences can be experimented to increase adoption of other transaction types. Additionally, research into how to make transfers even more seamless for customers.
+4. Protect and strengthen transaction journeys customers already use. Results show that transfers dominate customer activity. Review support tickets, customer feedback for friction associated with other transaction methods. A/B testing of new methods and experiences could be used to evaluate opportunities to increase adoption of other transaction types. Additionally, research into how to make transfers even more seamless for customers.
 
 5. Improve adoption of lower performing products. The savings product has a strong adoption at 79%, however the other products have considerably lower adoption. Invest barriers to adoption and improve customer experience around them. Customer feedback and support ticket data should be used to identify specific friction points before introducing new product features.
 
@@ -121,9 +121,19 @@ Although the proportion of power customers is highest in the Very High income ba
 
 Big Query: Data Preparation, Transformation and Analytical Modelling
 
-PowerBI: Data visualisation and dashboard development
+Power BI: Data visualisation and dashboard development
 
-Figma: Dashbard wireframing
+Figma: Dashboard wireframing
+
+## **Repository Structure**
+cofinfad-financial-dashboard/
+├── dashboard images/   # Final Power BI dashboard pages
+├── measures.md         # DAX measures used in the analysis
+├── schema.sql          # BigQuery analytical schema
+└── cofinfad.pbix       # Power BI dashboard file
+└── README.md           # Project overview, analysis and recommendations
+
+
 
 ## **Data Credits**
 
