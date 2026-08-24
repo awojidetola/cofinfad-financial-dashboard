@@ -126,6 +126,10 @@ Power BI: Data visualisation and dashboard development
 Figma: Dashboard wireframing
 
 ## **Repository Structure**
+
+
+```text
+
 cofinfad-financial-dashboard/
 ├── dashboard images/   # Final Power BI dashboard pages
 ├── measures.md         # DAX measures used in the analysis
@@ -133,7 +137,7 @@ cofinfad-financial-dashboard/
 └── cofinfad.pbix       # Power BI dashboard file
 └── README.md           # Project overview, analysis and recommendations
 
-
+```
 
 ## **Data Credits**
 
